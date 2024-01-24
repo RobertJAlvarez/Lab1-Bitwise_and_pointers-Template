@@ -22,17 +22,17 @@ void print_LL(const list_t *LL, const order_t order);
 /* Helper function to create a node with data and added at
  * the beginning of the list.
  */
-void push(list_t *LL, const int data);
+int push(list_t *LL, const int data);
 
 /* Helper function to insert new_node in LL such that the
  * node before it have a lower address and the node after
  * have a higher address than new_node.
  */
-void insert_node(list_t *LL, node_t *new_node);
+int insert_node(list_t *LL, node_t *new_node);
 
 /* Helper function to remove a node from LL given its
  * address.
  */
-void remove_node(list_t *LL, unsigned long remove_node);
+int remove_node(list_t *LL, unsigned long remove_node);
 
 #endif

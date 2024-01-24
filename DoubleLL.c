@@ -32,8 +32,8 @@ void print_LL(const list_t *LL, const order_t order) {
   printf("NULL\n");
 }
 
-void push(list_t *LL, const int data) {
-  if (LL == NULL) return;
+int push(list_t *LL, const int data) {
+  if (LL == NULL) return 1;
 
   node_t *head = LL->head;
 
@@ -58,16 +58,22 @@ void push(list_t *LL, const int data) {
 
   // update the head pointer
   LL->head = newNode;
+
+  return 0;
 }
 
-void insert_node(list_t *LL, node_t *new_node) {
+int insert_node(list_t *LL, node_t *new_node) {
   printf("IMPLEMENT THIS FUNCTION");
   printf("LL = %p\n", LL);
   printf("new_node = %p\n", new_node);
+
+  return 1;
 }
 
-void remove_node(list_t *LL, unsigned long remove_node) {
+int remove_node(list_t *LL, unsigned long remove_node) {
   printf("IMPLEMENT THIS FUNCTION");
   printf("LL = %p\n", LL);
   printf("remove_node = %ld\n", remove_node);
+
+  return 1;
 }

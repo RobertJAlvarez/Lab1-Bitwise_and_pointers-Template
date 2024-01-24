@@ -16,11 +16,6 @@ void swap(short *n1, short *n2);
  */
 int has_odd_number_of_bits_set(int n);
 
-/* Turn the k bit of n on
- * Only use: | and <<
- */
-int turn_k_bit_on(const int n, const int k);
-
 /* Turn k bit of n off
  * Only use: &, ~ and <<
  */
