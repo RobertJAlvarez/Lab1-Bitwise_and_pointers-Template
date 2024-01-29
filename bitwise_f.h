@@ -43,8 +43,13 @@ int is_palindrome(const int n);
 short copy_reverse_bits(short n);
 
 /* Numbers is a 2D array of
- * Only use:
+ * Only use: << and &
  */
 void print_number(const unsigned char number, const enum reflection refl);
+
+/* Return 1 if all the its characters are unique, 0 otherwise.
+ * Only use: |, & and <<
+ */
+int is_unique(const char *s);
 
 #endif

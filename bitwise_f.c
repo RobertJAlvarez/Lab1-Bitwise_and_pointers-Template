@@ -17,3 +17,5 @@ short copy_reverse_bits(short n) { return -1; }
 void print_number(const unsigned char number, const enum reflection refl) {
   return;
 }
+
+int is_unique(const char *s) { return -1; }
